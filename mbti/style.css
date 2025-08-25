@@ -1,0 +1,332 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8f0;
+    color: #333;
+    margin: 0;
+    padding-top: 80px;
+    text-align: center;
+}
+
+/* 페이지 컨텐츠를 가운데 정렬 */
+.page {
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+h1,
+h2 {
+    color: #4a90e2;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #357bd9;
+    transform: translateY(-2px);
+}
+
+
+  .options-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+  }
+
+  .option-btn {
+      background-color: #f1f1f1;
+      color: #333;
+      border: 1px solid #ddd;
+      padding: 15px;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-align: left;
+  }
+
+  .option-btn:hover {
+      background-color: #e9e9e9;
+      transform: none;
+  }
+
+  #disqus_thread {
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 90%;
+    text-align: left; /* 댓글은 왼쪽 정렬이 자연스러움 */
+}
+
+  #product-img {
+      display: block;
+      /* 블록 요소로 변경 */
+      margin: 20px auto;
+      /* 위아래 20px, 좌우 자동 → 가운데 정렬 */
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+
+  .result-info {
+      margin-top: 20px;
+      text-align: left;
+      line-height: 1.6;
+  }
+
+  .result-info h3 {
+      margin-bottom: 5px;
+      color: #357bd9;
+  }
+
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  #result-page h2 {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      color: #4a90e2;
+  }
+
+  #result-page img {
+      display: block;
+      margin: 10px auto;
+      width: 250px;
+      height: 350px;
+      border-radius: 10%;
+      object-fit: cover;
+  }
+
+  #mbti-desc {
+      margin: 20px 0;
+      font-size: 1.1rem;
+      line-height: 1.6;
+  }
+
+  .hashtags {
+      margin: 15px 0;
+      font-size: 1rem;
+      color: #555;
+  }
+
+  .hashtags::before {
+      display: block;
+  }
+
+  .hashtags span {
+      margin-right: 15px;
+  }
+
+  .link-container {
+      margin-top: 20px;
+  }
+
+  .link-container a {
+      display: inline-block;
+      background-color: #4a90e2;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+  }
+
+  .link-container a:hover {
+      background-color: #357bd9;
+  }
+
+  #progress-container {
+      width: 100%;
+      background-color: #e0e0e0;
+      border-radius: 10px;
+      height: 20px;
+      margin: 10px 0;
+      overflow: hidden;
+  }
+
+  #progress-bar {
+      height: 100%;
+      width: 0%;
+      background-color: #357bd9;
+      /* 초록색 진행 바 */
+      transition: width 0.3s ease;
+  }
+
+  #progress-text {
+      text-align: right;
+      font-size: 14px;
+      margin: 5px 0;
+  }
+
+  .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      /* 여러 줄 가능하도록 */
+      gap: 25px;
+      margin-top: 10px;
+      justify-content: center;
+      /* 좌우 균등 배치 */
+  }
+
+  .product-card {
+      flex: 0 1 calc(40%);
+      /* 한 줄에 2개, gap 고려 */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-decoration: none;
+      color: inherit;
+      background-color: #fafafa;
+      transition: transform 0.2s, box-shadow 0.3s;
+  }
+
+  .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-card img {
+      width: 100px;
+      height: 60px;
+      border-radius: 4px;
+      object-fit: cover;
+      background-color: #fff;
+      margin-bottom: 5px;
+  }
+
+  .product-info {
+      text-align: center;
+      /* 가운데 정렬 */
+  }
+
+  .product-info h3 {
+      font-size: 1rem;
+  }
+
+  .product-info p {
+      font-size: 0.85rem;
+  }
+
+
+  .home-link {
+      position: fixed;
+      top: 10px;
+      /* 화면 위쪽에서 10px */
+      left: 30px;
+      /* 화면 왼쪽에서 10px */
+      display: inline-block;
+  }
+
+  /* 이미지 크기 조절 */
+  .home-link img {
+      width: 120px;
+      /* 원하는 가로 크기 */
+      height: auto;
+      /* 세로 비율 유지 */
+      cursor: pointer;
+      /* 마우스 올리면 클릭 느낌 */
+  }
+.top-menu {
+    position: fixed; /* 화면 상단에 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #f0f8f0; /* 투명도 제거 */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* 메뉴 링크 공통 */
+.top-menu a {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/* 이미지 스타일 */
+.top-menu img {
+    display: block;
+    height: 60px; /* 원하는 높이로 조정 가능 */
+    width: auto;
+}
+
+.share-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.share-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.share-circle {
+  display: flex;
+  justify-content: center;   /* 아이콘 가운데 정렬 */
+  gap: 12px;                 /* 아이콘 사이 간격 */
+}
+
+.circle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: #fff;
+  border: 1.5px solid #4a90e2;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.circle-btn img {
+  
+  object-fit: contain; /* 비율 유지하면서 안 잘리게 */
+  display: block;
+}
+
+.circle-btn:hover {
+  background-color: #eef5ff;
+  transform: scale(1.15);    /* 호버 시 확대 */
+}

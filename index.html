@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인 페이지</title>
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .btn {
+      display: block;
+      margin: 15px auto;
+      padding: 12px 20px;
+      font-size: 1.1em;
+      color: #fff;
+      background: #4CAF50;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 220px;
+      transition: background 0.3s, transform 0.2s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #45a049;
+      transform: translateY(-3px);
+    }
+    .btn.secondary {
+      background: #2196F3;
+    }
+    .btn.secondary:hover {
+      background: #1976D2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>메인 페이지</h1>
+    <a href="../intro/index.html" class="btn">홈페이지로 이동</a>
+    <a href="../mbti/index.html" class="btn secondary">MBTI 테스트로 이동</a>
+  </div>
+</body>
+</html>
