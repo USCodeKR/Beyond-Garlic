@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 01: 의성장날 활성화 | Beyond Garlic</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Manrope:wght@400;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-cream: #FDFBF5;
+            --brand-green: #164A41;
+            --brand-yellow: #F1B24A;
+            --brand-red: #D9534F;
+            --text-dark: #212529;
+        }
+        body {
+            font-family: 'Manrope', 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+        .font-display { font-family: 'DM Serif Display', serif; }
+        .font-brand { font-family: 'Gasoek One', sans-serif; }
+
+        /* 스크롤 애니메이션 */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1), transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+   <header class="sticky top-0 left-0 right-0 z-50 bg-[var(--bg-cream)]/80 backdrop-blur-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-display font-bold tracking-wide">BEYOND GARLIC.</a>
+            <a href="retrospective.html" class="bg-black text-white font-bold py-2 px-5 rounded-full text-sm hover:bg-gray-800 transition-colors duration-300">
+                retrospective
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Project Hero Section -->
+        <section class="py-20 md:py-32 text-center">
+            <div class="container mx-auto px-6">
+                <p class="font-bold text-sm text-[var(--brand-yellow)] reveal">PROJECT 01</p>
+                <h1 class="text-4xl md:text-7xl font-display mt-4 reveal" style="transition-delay: 0.1s;">의성장날, <br>너도 할 수 있어!</h1>
+                <p class="mt-6 text-lg max-w-2xl mx-auto text-gray-600 reveal" style="transition-delay: 0.2s;">
+                    우리는 '의성장날'의 인지도를 높이고 의성 특산품 매출을 증대시키기 위해 <br> MZ세대를 겨냥한 바이럴 마케팅을 기획했습니다. <br> 그 핵심은 바로 '특산물 MBTI 테스트'입니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- Service Flow Section -->
+        <section class="py-20 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-display reveal">Service Flow</h2>
+                    <p class="mt-4 text-lg max-w-2xl mx-auto text-gray-600 reveal" style="transition-delay: 0.1s;">사용자는 간단한 테스트를 통해 쇼핑몰까지 자연스럽게 연결됩니다.</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 reveal">
+                    <div class="text-center w-48">
+                        <div class="text-5xl h-14 flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.703.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.942a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm0 1.442A6.536 6.536 0 0 1 14.558 8a6.536 6.536 0 0 1-6.558 6.558A6.536 6.536 0 0 1 1.442 8 6.536 6.536 0 0 1 8 1.442zM8 4.202a3.798 3.798 0 1 0 0 7.596 3.798 3.798 0 0 0 0-7.596zM12.127 4.883a.96.96 0 1 0 0-1.92.96.96 0 0 0 0 1.92z"/>
+                              <path d="M8 10.202a2.202 2.202 0 1 1 0-4.404 2.202 2.202 0 0 1 0 4.404z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mt-2">SNS 유입</h3>
+                        <p class="text-sm text-gray-500">인스타그램</p>
+                    </div>
+                    <div class="text-6xl font-bold text-gray-400 transform rotate-90 md:rotate-0">&rarr;</div>
+                    <div class="text-center w-48">
+                        <div class="text-5xl h-14 flex justify-center items-center">📝</div>
+                        <h3 class="font-bold text-lg mt-2">MBTI 테스트</h3>
+                        <p class="text-sm text-gray-500">12개 문항 답변</p>
+                    </div>
+                    <div class="text-6xl font-bold text-gray-400 transform rotate-90 md:rotate-0">&rarr;</div>
+                    <div class="text-center w-48">
+                        <div class="text-5xl h-14 flex justify-center items-center">🎁</div>
+                        <h3 class="font-bold text-lg mt-2">결과 확인</h3>
+                        <p class="text-sm text-gray-500">캐릭터 & 상품 추천</p>
+                    </div>
+                    <div class="text-6xl font-bold text-gray-400 transform rotate-90 md:rotate-0">&rarr;</div>
+                    <div class="text-center w-48">
+                        <div class="text-5xl h-14 flex justify-center items-center">🛒</div>
+                        <h3 class="font-bold text-lg mt-2">의성장날 유입</h3>
+                        <p class="text-sm text-gray-500">사이트 방문</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Outcomes Section -->
+        <section class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-display reveal">Key Outcomes</h2>
+                    <p class="mt-4 text-lg max-w-2xl mx-auto text-gray-600 reveal" style="transition-delay: 0.1s;">'특산물 MBTI 테스트' 프로젝트를 통해 얻은 구체적인 성과입니다.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                       <div class="p-8 bg-white rounded-lg shadow-lg reveal" style="transition-delay: 0.3s;">
+                        <p class="text-5xl font-display text-[var(--brand-green)]">689+</p>
+                        <h3 class="text-xl font-bold mt-4">콘텐츠 참여</h3>
+                        <p class="mt-2 text-gray-500">689회 이상의 광고 조회수를 기록하며, <br> MZ세대의 이목을 끄는 데 성공했습니다.</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-lg shadow-lg reveal">
+                        <p class="text-5xl font-display text-[var(--brand-green)]">1.2%</p>
+                        <h3 class="text-xl font-bold mt-4">클릭률 (CTR)</h3>
+                        <p class="mt-2 text-gray-500">광고를 접한 2,503명 중 30명이 링크를 클릭하여, <br>평균 이상의 높은 사용자 관심을 이끌어냈습니다.</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-lg shadow-lg reveal" style="transition-delay: 0.15s;">
+                        <p class="text-5xl font-display text-[var(--brand-green)]">17%</p>
+                        <h3 class="text-xl font-bold mt-4">전환율 (CVR)</h3>
+                        <p class="mt-2 text-gray-500">테스트 참여자 중 17%가 추천 상품을 클릭하여, <br>높은 구매 의향을 확인할 수 있었습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-black text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl font-display">Let's Talk!</h2>
+            <p class="mt-4 text-gray-400">의성의 다음 이야기를 함께 만들고 싶다면, 언제든 연락주세요.</p>
+            <div class="mt-8">
+                <a href="mailto:hello@beyondgarlic.com" class="bg-[var(--brand-yellow)] text-black font-bold py-3 px-8 rounded-full hover:brightness-110 transition-all duration-300">
+                    hello@beyondgarlic.com
+                </a>
+            </div>
+            <div class="mt-12 text-sm text-gray-500">
+                <p>&copy; 2025 BEYOND GARLIC. A creative collective for Uiseong.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
