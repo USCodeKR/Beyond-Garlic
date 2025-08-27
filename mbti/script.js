@@ -262,10 +262,10 @@ const results = {
             link: '#'
         },
         relatedProducts: [
-            { title: "파파피치 여름 황도 백도 복숭아 3kg(중)(12~15과)", price: "26,000원", image: 'images/peach_product.png', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1723210464' },
-            { title: "[한톨]의성복숭아 딱딱이 마도카 물렁이 딱복 물복 4kg", price: "22,400원", image: 'images/peach2_product.jpg', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1753427965' },
-            { title: "[의성복숭아나라] 햇살담은 엘바트 황도복숭아 선물용 3kg 9과~12과", price: "28,000원", image: 'images/peach3_product.png', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1756083598' },
-            { title: "[한톨]의성복숭아 딱딱이 경봉 금적 7~11과 4kg", price: "32,800원", image: 'images/peach4_product.jpg', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1755041124' }
+            { title: "파파피치 여름 황도 백도 복숭아 3kg(중)(12~15과)", price: "26,000원", image: '../res/img/product/peach_product.png', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1723210464' },
+            { title: "[한톨]의성복숭아 딱딱이 마도카 물렁이 딱복 물복 4kg", price: "22,400원", image: '../res/img/product/peach2_product.jpg', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1753427965' },
+            { title: "[의성복숭아나라] 햇살담은 엘바트 황도복숭아 선물용 3kg 9과~12과", price: "28,000원", image: '../res/img/product/peach3_product.png', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1756083598' },
+            { title: "[한톨]의성복숭아 딱딱이 경봉 금적 7~11과 4kg", price: "32,800원", image: '../res/img/product/peach4_product.jpg', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1755041124' }
         ]
     },
     'ESFP': {
@@ -278,10 +278,10 @@ const results = {
             link: "#"
         },
         relatedProducts: [
-            { title: "파파피치 여름 황도 백도 복숭아 3kg(중)(12~15과)", price: "26,000원", image: 'images/peach_product.png', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1723210464' },
-            { title: "[한톨]의성복숭아 딱딱이 마도카 물렁이 딱복 물복 4kg", price: "22,400원", image: 'images/peach2_product.jpg', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1753427965' },
-            { title: "[의성복숭아나라] 햇살담은 엘바트 황도복숭아 선물용 3kg 9과~12과", price: "28,000원", image: 'images/peach3_product.png', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1756083598' },
-            { title: "[한톨]의성복숭아 딱딱이 경봉 금적 7~11과 4kg", price: "32,800원", image: 'images/peach4_product.jpg', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1755041124' }
+            { title: "파파피치 여름 황도 백도 복숭아 3kg(중)(12~15과)", price: "26,000원", image: '../res/img/product/peach_product.png', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1723210464' },
+            { title: "[한톨]의성복숭아 딱딱이 마도카 물렁이 딱복 물복 4kg", price: "22,400원", image: '../res/img/product/peach2_product.jpg', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1753427965' },
+            { title: "[의성복숭아나라] 햇살담은 엘바트 황도복숭아 선물용 3kg 9과~12과", price: "28,000원", image: '../res/img/product/peach3_product.png', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1756083598' },
+            { title: "[한톨]의성복숭아 딱딱이 경봉 금적 7~11과 4kg", price: "32,800원", image: '../res/img/product/peach4_product.jpg', link: 'https://esmall.cyso.co.kr/shop/item.php?it_id=1755041124' }
         ]
     },
     'INFP': {
